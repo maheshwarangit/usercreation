@@ -1,0 +1,8 @@
+---
+- name: Create the users in servera hosts
+  hosts: servera.lab.example.com
+  tasks:
+    - name: Create Controller user
+      ansible.builtin.user:
+        name: controller
+        state: present
